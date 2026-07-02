@@ -1,0 +1,21 @@
+[package]
+name = "markdown-administrator"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "markdown-administrator"
+path = "src/main.rs"
+
+[lib]
+name = "markdown_administrator"
+path = "src/lib.rs"
+
+[dependencies]
+rmcp = { version = "1.7", default-features = false, features = ["server", "macros", "transport-io"] }
+tokio = { version = "1", features = ["full"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+anyhow = "1"
+
+[dev-dependencies]
