@@ -153,9 +153,7 @@ fn split_section(
     let mut end_line = raw_lines.len(); // exclusive
     for i in (start_line + 1)..raw_lines.len() {
         // Trim the raw line for heading detection (handles \r\n).
-        if let Some((lvl, _)) =
-            parse_atx_heading(raw_lines[i].trim_end_matches(['\r', '\n']))
-        {
+        if let Some((lvl, _)) = parse_atx_heading(raw_lines[i].trim_end_matches(['\r', '\n'])) {
             if lvl <= level {
                 end_line = i;
                 break;
