@@ -1,0 +1,15 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-07-09/server.schema.json",
+  "name": "dev.praxec/markdown-administrator",
+  "description": "Markdown administration MCP server — structured read/edit over Markdown.",
+  "version": "0.1.0",
+  "repository": { "url": "https://github.com/praxec/markdown-administrator", "source": "github" },
+  "packages": [
+    {
+      "registryType": "oci",
+      "identifier": "ghcr.io/praxec/markdown-administrator",
+      "version": "0.1.0",
+      "transport": { "type": "stdio" }
+    }
+  ]
+}
