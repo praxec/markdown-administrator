@@ -1,8 +1,8 @@
 use anyhow::Result;
+use rmcp::RoleServer;
 use rmcp::model::*;
 use rmcp::service::RequestContext;
 use rmcp::transport::stdio;
-use rmcp::RoleServer;
 use rmcp::{ServerHandler, ServiceExt};
 use std::sync::Arc;
 
