@@ -39,6 +39,7 @@ jobs:
           bin: markdown-administrator
           target: ${{ matrix.target }}
           archive: markdown-administrator-${{ matrix.target }}
+          checksum: sha256
           token: ${{ secrets.GITHUB_TOKEN }}
 
   image:
